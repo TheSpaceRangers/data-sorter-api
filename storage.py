@@ -1,7 +1,6 @@
 import redis
 import json
 
-REDIS_KEY = "spacex:launches"
 REDIS_HOST = "localhost"
 REDIS_PASSWORD = ""
 REDIS_PORT = 6379
@@ -15,12 +14,12 @@ def get_redis_connection():
         password=REDIS_PASSWORD
     )
 
-def store_in_redis(data, key=REDIS_KEY):
+def store_in_redis(data, key):
     r = get_redis_connection()
     r.set(key, json.dumps(data))
     print(f"✅ {len(data)} lancements enregistrés dans Redis sous la clé '{key}'.")
 
-def retrieve_from_redis(key=REDIS_KEY):
+def retrieve_from_redis(key):
     r = get_redis_connection()
     raw_data = r.get(key)
     if raw_data:

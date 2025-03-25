@@ -2,7 +2,7 @@ import requests
 
 API_URL = "https://api.spacexdata.com/v5/launches"
 
-def get_launches_from_api():
+def fetch_data():
     try:
         response = requests.get(API_URL, timeout=10)
         response.raise_for_status()
