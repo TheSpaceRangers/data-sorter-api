@@ -1,5 +1,6 @@
 import redis
 import json
+from datetime import datetime
 
 REDIS_HOST = "localhost"
 REDIS_PASSWORD = ""
@@ -14,10 +15,15 @@ def get_redis_connection():
         password=REDIS_PASSWORD
     )
 
-def store_in_redis(data, key):
+def json_datetime_serializer(obj):
+    if isinstance(obj, datetime):
+        return obj.isoformat()
+    raise TypeError(f"Type {type(obj)} not serializable")
+
+def store_in_redis(data, key="default:key"):
     r = get_redis_connection()
-    r.set(key, json.dumps(data))
-    print(f"✅ {len(data)} lancements enregistrés dans Redis sous la clé '{key}'.")
+    r.set(key, json.dumps(data, default=json_datetime_serializer))
+    print(f"✅ {len(data)} éléments stockés dans Redis sous la clé '{key}'.")
 
 def retrieve_from_redis(key):
     r = get_redis_connection()

@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa541849-d9c0-4cd1-8bd3-fe381d7f9b77" name="Changes" comment="Refactor launch pagination and enhance launch details output">
-      <change afterPath="$PROJECT_DIR$/sources/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/countries.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/crypto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/pokemon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/products.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data-sorter-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data-sorter-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/sources/spacex.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorting.py" beforeDir="false" afterPath="$PROJECT_DIR$/sorting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sources/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/countries.py" beforeDir="false" afterPath="$PROJECT_DIR$/sources/countries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/crypto.py" beforeDir="false" afterPath="$PROJECT_DIR$/sources/crypto.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/pokemon.py" beforeDir="false" afterPath="$PROJECT_DIR$/sources/pokemon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/products.py" beforeDir="false" afterPath="$PROJECT_DIR$/sources/products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/spacex.py" beforeDir="false" afterPath="$PROJECT_DIR$/sources/spacex.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/storage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
@@ -38,12 +40,12 @@
     &quot;assignee&quot;: &quot;TheSpaceRangers&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/TheSpaceRangers/data-sorter-api.git&quot;,
-    &quot;accountId&quot;: &quot;279653f0-8c77-4226-9f99-e72e58b11436&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/TheSpaceRangers/data-sorter-api.git",
+    "accountId": "2a9d537b-d77a-4842-a2f8-6fb55ff22c6c"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -60,6 +62,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -150,6 +153,7 @@
       <updated>1742917005500</updated>
       <workItem from="1742917006528" duration="1219000" />
       <workItem from="1742927190137" duration="12341000" />
+      <workItem from="1742983659718" duration="5943000" />
     </task>
     <task id="LOCAL-00001" summary="Add .gitignore to exclude .idea directory">
       <option name="closed" value="true" />
@@ -188,7 +192,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="Refactor launch pagination and enhance launch details output" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/data_sorter_api$main.coverage" NAME="main Coverage Results" MODIFIED="1742939438778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/data_sorter_api$main.coverage" NAME="main Coverage Results" MODIFIED="1742992686294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/data_sorter_api$api.coverage" NAME="api Coverage Results" MODIFIED="1742932179343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

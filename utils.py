@@ -1,14 +1,19 @@
 def paginate_launches(launches, display_keys=None, page_size=5):
     total = len(launches)
-    current_page = 0
+    if total == 0:
+        print("❌ Aucun élément à afficher.")
+        return
+
     total_pages = (total + page_size - 1) // page_size
+    current_page = 0
 
     while True:
         start = current_page * page_size
         end = start + page_size
         page_items = launches[start:end]
 
-        print(f"\n📄 Page {current_page + 1}/{total_pages} — Affichage {start + 1} à {min(end, total)} sur {total}\n")
+        if total_pages > 1:
+            print(f"\n📄 Page {current_page + 1}/{total_pages} — Affichage {start + 1} à {min(end, total)} sur {total}\n")
 
         for launch in page_items:
             for key in display_keys or launch.keys():
@@ -18,6 +23,9 @@ def paginate_launches(launches, display_keys=None, page_size=5):
                 else:
                     print(f"{key.capitalize():<12}: {value}")
             print("-" * 40)
+
+        if total_pages == 1:
+            break
 
         print("\n[N] Suivant | [P] Précédent | [Q] Quitter")
         choice = input("Votre choix : ").strip().lower()
