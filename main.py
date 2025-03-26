@@ -139,7 +139,5 @@ def menu():
     sorted_data = compare_algorithms(data, key=conf["sort_key"], reverse=conf.get("reverse", False))
     handle_user_action(sorted_data, conf)
 
-
-
 if __name__ == "__main__":
     menu()
